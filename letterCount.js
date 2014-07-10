@@ -44,15 +44,15 @@ var letterCount = function (string) {
 		];
 	
 	//converts to array from string
-	for (i=0;i<string.length;i++) {
+	for (var i=0;i<string.length;i++) {
 		myArray.push(string[i].toLowerCase());
 	}
 
 	// console.log(myArray);
 
 	//counts characters and updates Output log
-	for (i=0;i<myArray.length;i++) {
-		for (j=0;j<myOutput.length;j++) {
+	for (var i=0;i<myArray.length;i++) {
+		for (var j=0;j<myOutput.length;j++) {
 			if (myOutput[j][0]===myArray[i]) {
 
 				myOutput[j][1]++;
@@ -63,7 +63,7 @@ var letterCount = function (string) {
 //	console.log(myOutput);
 	
 	//Outputs
-	for (i=0;i<myOutput.length;i++) {
+	for (var i=0;i<myOutput.length;i++) {
 			if (myOutput[i][1] !== 0) {
 				console.log(myOutput[i][0], "-", myOutput[i][1]);
 			}

@@ -4,7 +4,7 @@ var merge = function (arr1, arr2) {
 
 	var combined = [], combineLength = arr1.length + arr2.length;
 
-	for(i=0;i<combineLength;i++) {
+	for(var i=0;i<combineLength;i++) {
 			if(arr1.length === 0) { 
 				combined.push(arr2[0]);				
 			}

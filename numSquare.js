@@ -6,7 +6,7 @@ var numSquare = function (max) {
 
 	var arr = [];
 
-	for (i=1; i*i<=max; i++) {
+	for (var i=1; i*i<=max; i++) {
 		arr.push(i*i);
 	}
 
